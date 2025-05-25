@@ -6,5 +6,6 @@ def calculate_simple_interest(principal, rate, time):
     interest = principal * rate * time
     return interest
 
-    print("The simple interest is: " + interest)
-    
+interest = calculate_simple_interest(principal, rate, time)  # Calculate simple interest
+
+print("The simple interest is: " + str(interest))
