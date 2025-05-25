@@ -8,7 +8,8 @@ def calculate_operations(number1, number2):
         }
 
 # Define numbers
-number1, number2 = 10, 5
+number1 = 10
+number2 = 5
 
 # Get results
 results = calculate_operations(number1, number2)
