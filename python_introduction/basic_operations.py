@@ -1,28 +1,22 @@
-number1 = 10
-number2 = 5
+# Basic arithmetic operations in Python
 
-def add_numbers(number1, number2):
-    added = number1 + number2
-    return added
+def calculate_operations(number1, number2):
+    return {
+        "addition": number1 + number2,
+        "subtraction": number1 - number2,
+        "multiplication": number1 * number2,
+        }
 
-added = add_numbers(number1, number2)
-print("Addition of " + str(number1) + " and " + str(number2) + " is " + str(added))
+# Define numbers
+number1, number2 = 10, 5
 
+# Get results
+results = calculate_operations(number1, number2)
 
-def subtract_numbers(number1, number2):
-    subtracted = number1 - number2
-    return subtracted
+# Display results
 
-subtracted = subtract_numbers(number1, number2)
-print("Subtraction of " + str(number1) + " and " + str(number2) + " is " + str(subtracted))
-
-def multiply_numbers(number1, number2):
-    multiplied = number1 * number2
-    return multiplied
-
-multiplied = multiply_numbers(number1, number2)
-print("Multiplication of " + str(number1) + " and " + str(number2) + " is " + str(multiplied))
-
-    
+print("Addition of", number1, "and", number2, "is", results["addition"])
+print("Subtraction of", number1, "from", number2, "is", results["subtraction"])
+print("Multiplication of", number1, "and", number2, "is", results["multiplication"])
     
     
