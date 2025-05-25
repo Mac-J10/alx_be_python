@@ -16,7 +16,7 @@ results = calculate_operations(number1, number2)
 # Display results
 
 print("Addition of", number1, "and", number2, "is", results["addition"])
-print("Subtraction of", number1, "from", number2, "is", results["subtraction"])
+print("Subtraction of", number1, "and", number2, "is", results["subtraction"])
 print("Multiplication of", number1, "and", number2, "is", results["multiplication"])
     
     
