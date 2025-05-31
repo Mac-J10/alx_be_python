@@ -20,7 +20,7 @@ if time_bound == "yes":
 else:
     if time_bound == "no":
         reminder += " Consider completing it when you have free time."
-# If the user enters an invalid priority, we will not modify the reminder further.
+# If the user enters an invalid priority, we will not modify the reminder further.a
     else:
         reminder += " Please clarify if it is time-bound or not."
 
