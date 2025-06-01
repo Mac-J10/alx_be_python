@@ -4,7 +4,7 @@ Time_bound = input("Is it time-bound? (yes or no): ")
 Priority = input("Priority (high, medium, low): ")
 
 # Process the task based on priority
-match priority:
+match Priority:
     case "high":
         reminder = f"'{Task}' is a high priority task"
     case "medium":
@@ -21,6 +21,7 @@ else:
     if Time_bound == "no":
         reminder += " Consider completing it when you have free time."
 # If the user enters an invalid priority, we will not modify the reminder further.
+
     else:
         reminder += " Please clarify if it is time-bound or not."
 
