@@ -23,4 +23,4 @@ else:
     reminder += " Please clarify if it is time-bound or not."
 
 # Print customized reminder
-print(reminder)
+print(f"Reminder: {reminder}")
