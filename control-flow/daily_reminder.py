@@ -1,7 +1,7 @@
 # Prompt user for task details
-Task = input("Enter your task: ")
-Time_bound = input("Is it time-bound? (yes or no): ")
-Priority = input("Priority (high, medium, low): ")
+Task = str(input("Enter your task: "))
+Time_bound = str(input("Is it time-bound? (yes or no): "))
+Priority = str(input("Priority (high, medium, low): "))
 
 # Process the task based on priority
 match Priority:
