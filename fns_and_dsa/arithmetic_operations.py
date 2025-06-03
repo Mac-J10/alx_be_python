@@ -1,4 +1,4 @@
-# arithmetic_operations.py
+  # arithmetic_operations.py
 
 def perform_operation(num1: float, num2: float, operation: str):
     """Performs basic arithmetic operations based on the given operation."""
@@ -15,17 +15,10 @@ def perform_operation(num1: float, num2: float, operation: str):
     else:
         return "Error: Invalid operation."
 
+print(perform_operation(10, 5, "add"))  # Example usage
+print(perform_operation(10, 5, "subtract"))
+print(perform_operation(10, 5, "multiply"))
+print(perform_operation(10, 5, "divide"))
+print(perform_operation(10, 0, "divide"))
+print(perform_operation(10, 5, "invalid"))
 
-from arithmetic_operations import perform_operation
-
-def main():
-    print("Arithmetic Operations")
-    num1 = float(input("Enter the first number: "))
-    num2 = float(input("Enter the second number: "))
-    operation = input("Enter the operation (add, subtract, multiply, divide): ").strip().lower()
-
-    result = perform_operation(num1, num2, operation)
-    print(f"Result: {result}")
-
-if __name__ == "__main__":
-    main()
