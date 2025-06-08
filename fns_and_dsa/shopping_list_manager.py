@@ -10,18 +10,18 @@ def main():
     shopping_list = []
     while True:
         display_menu()
-        choice = input("Enter your choice: ")
+        choice = input("Enter your choice: ").strip()
 
         if choice == '1':
             # Prompt for and add an item
-            item = input("Enter the item to add: ")
-            shopping_list.append(item)
+            add_item = input("Enter the item to add: ").strip()
+            shopping_list.append(add_item)
             pass
         elif choice == '2':
             # Prompt for and remove an item
-            item = input("Enter the item to remove: ")
+            remove_item = input("Enter the item to remove: ").strip()
             if item in shopping_list:
-                shopping_list.remove(item)
+                shopping_list.remove(remove_item)
                 print(f"{item} has been removed from the list.")
             else:
                 print(f"{item} not found in the list.")
@@ -40,6 +40,6 @@ def main():
             break
         else:
             print("Invalid choice. Please try again.")
-
+            pass
 if __name__ == "__main__":
     main()
