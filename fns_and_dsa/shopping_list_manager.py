@@ -10,17 +10,17 @@ def main():
 
     while True:
         display_menu()
-        choice = input("Enter your choice: ").strip()
+        choice = input("Enter your choice: ")
 
         if choice == '1':
             # Add an item
-            item = input("Enter the item to add: ").strip()
+            item = input("Enter the item to add: ")
             if item:
                 shopping_list.append(item)
 
         elif choice == '2':
             # Remove an item
-            item = input("Enter the item to remove: ").strip()
+            item = input("Enter the item to remove: ")
             if item in shopping_list:
                 shopping_list.remove(item)
 
