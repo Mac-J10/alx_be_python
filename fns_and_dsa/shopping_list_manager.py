@@ -5,36 +5,39 @@ def display_menu():
     print("3. View List")
     print("4. Exit")
 
+    
 def main():
-    shopping_list = []  # Initialize an empty shopping list
-
+    shopping_list = []
     while True:
         display_menu()
         choice = input("Enter your choice: ")
 
         if choice == '1':
-            # Add an item
+            # Prompt for and add an item
             item = input("Enter the item to add: ")
-            if item:
-                shopping_list.append(item)
-
+            shopping_list.append(item)
+            pass
         elif choice == '2':
-            # Remove an item
+            # Prompt for and remove an item
             item = input("Enter the item to remove: ")
             if item in shopping_list:
                 shopping_list.remove(item)
-
+                print(f"{item} has been removed from the list.")
+            else:
+                print(f"{item} not found in the list.")
+            pass
         elif choice == '3':
-            # View the shopping list
+            # Display the shopping list
             if shopping_list:
-                print("\nCurrent Shopping List:")
-                for index, item in enumerate(shopping_list, start=1):
-                    print(f"{index}. {item}")
-
+                print("Shopping List:")
+                for item in shopping_list:
+                    print(f"- {item}")
+            else:
+                print("Your shopping list is empty.")
+            pass
         elif choice == '4':
             print("Goodbye!")
             break
-
         else:
             print("Invalid choice. Please try again.")
 
