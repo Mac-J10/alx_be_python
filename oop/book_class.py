@@ -15,10 +15,8 @@ class Book:
     def __del__(self):
         print(f"Deleting {self.title}")
 
-
     def __repr__(self):
-        print(f"Book('{self.title}', '{self.author}', {self.year})")
-        return ""
+        return f"Book('{self.title}', '{self.author}', {self.year})"
 
     def __del__(self):
         print(f"Deleting {self.title}")
